@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>main</title>
+	<style type="text/css">
+		body {
+			background-image: url(2.jpg);
+			background-size: cover;
+		}
+		@font-face {
+			font-family: slav;
+			src: url(Seminaria.ttf);
+		}
+		.box {
+			background: orange;
+			width: 300px;
+			margin: 0;
+		}
+		.img {
+			position: absolute;
+			width: 20px;
+			margin-left: 1000px;
+			margin-top: 350px;
+		}
+		.img1 {
+			position: absolute;
+			width: 150px;
+			margin-left:  850px ;
+			margin-top: 280px;
+		}
+		.img2 {
+			position: absolute;
+			width: 50px;
+			margin-left: 520px;
+			margin-top: 410px;
+		}
+		.img3 {
+			position: absolute;
+			width: 30px;
+			margin-left: 850px;
+			margin-top: 185px;
+		}
+		.os {
+			font-family: slav;
+			font-size: 40px;
+			margin: 0;
+		}
+		.text1 {
+			font-family: slav;
+			font-size: 40px;
+			margin: 0;
+		}
+		.text2 {
+			font-family: slav;
+			font-size: 40px;
+			margin: 0;
+		}
+		.text3 {
+			font-family: slav;
+			font-size: 40px;
+			margin: 0;
+		}
+		.text4 {
+			font-family: slav;
+			font-size: 40px;
+			margin: 0;
+		}
+		.text5 {
+			font-family: slav;
+			font-size: 40px;
+			margin: 0;
+		}
+	</style>	
+</head>
+<body>
+
+<div class="box">
+      <p class="text5">Найди: </p>
+      <p class="text2">Титана</p>
+      <p class="text3">Супермена</p>
+      <p class="text1">Мышь</p>
+      <p class="text4">Ноутбук</p>
+      <p class="os">Очки: <span class="text">0</span></p>
+</div>
+
+<img src="4.jpg" class="img">
+<img src="5.jpg" class="img1">
+<img src="6.jpg" class="img2">
+<img src="7.jpg" class="img3">
+
+<script type="text/javascript">
+let point = 0;
+
+document.querySelector('.img').onclick = function() {
+	point = point + 1;
+	console.log(point);
+	document.querySelector(".text").innerHTML = point;
+	document.querySelector('.img').style.display = "none";
+	document.querySelector('.text1').style.textDecoration = "line-through";
+}
+document.querySelector('.img1').onclick = function() {
+	point = point + 1;
+	console.log(point);
+	document.querySelector(".text").innerHTML = point;
+	document.querySelector('.img1').style.display = "none";
+	document.querySelector('.text4').style.textDecoration = "line-through";
+}
+document.querySelector('.img2').onclick = function() {
+	point = point + 1;
+	console.log(point);
+	document.querySelector(".text").innerHTML = point;
+	document.querySelector('.img2').style.display = "none";
+	document.querySelector('.text2').style.textDecoration = "line-through";
+}
+document.querySelector('.img3').onclick = function() {
+	point = point + 1;
+	console.log(point);
+	document.querySelector(".text").innerHTML = point;
+	document.querySelector('.img3').style.display = "none";
+	document.querySelector('.text3').style.textDecoration = "line-through";
+}
+
+</script>
+</body>
+</html>
